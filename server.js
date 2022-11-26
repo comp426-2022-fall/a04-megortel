@@ -20,7 +20,7 @@ app.get('/app/', (req, res) => {
 });
 
 app.get('/app/roll/', (req, res) => {
-    res.send(roll(6, 3, 1));
+    res.send(roll(6, 2, 1));
 });
 
 app.get('/app/roll/', (req, res, next) => {
@@ -32,7 +32,7 @@ app.get('/app/roll/', (req, res, next) => {
 
 app.get('/app/roll/:sides/', (req, res, next) => {
     let sides = parseInt(req.params.sides);
-    res.send(roll(sides, 3, 1)).end();
+    res.send(roll(sides, 2, 1)).end();
 });
 
 app.get('/app/roll/:sides/', (req, res, next) => {
