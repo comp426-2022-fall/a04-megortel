@@ -20,7 +20,7 @@ app.get('/app/', (req, res) => {
 });
 
 app.get('/app/roll/', (req, res) => {
-    res.send(roll(6, 2, 1));
+    res.send(roll(6, 3, 1));
 });
 
 app.post('/app/roll/', (req, res, next) => { //endpoint HTTP accept
