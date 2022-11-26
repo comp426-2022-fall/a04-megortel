@@ -35,7 +35,7 @@ app.get('/app/roll/:sides/', (req, res, next) => {
     res.send(roll(sides, 2, 1)).end();
 });
 
-app.get('/app/roll/:sides/', (req, res, next) => {
+app.get('/app/roll/:sides/:dice/', (req, res, next) => {
     let sides = parseInt(req.params.sides);
     let dice = parseInt(req.params.dice);
     res.send(roll(sides, dice, 1)).end();
