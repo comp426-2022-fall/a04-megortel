@@ -4,7 +4,7 @@ import roll from "./lib/roll.js"
 
 const app = express();
 
-const args = minmist(process.argv.slice(2));
+const args = minimist(process.argv.slice(2));
 
 app.arguments(express.json());
 app.arguments(express.urlencoded({extended:true}));
