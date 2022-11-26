@@ -6,8 +6,8 @@ const app = express();
 
 const args = minimist(process.argv.slice(2));
 
-app.arguments(express.json());
-app.arguments(express.urlencoded({extended:true}));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 let port = 5000;
 
 if(args.port){
