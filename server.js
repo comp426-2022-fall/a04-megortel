@@ -23,7 +23,6 @@ app.get('/app/roll/', (req, res) => {
     res.send(roll(6, 2, 1));
 });
 
-
 app.post('/app/roll/', (req, res, next) => { //endpoint HTTP accept
     let sides = parseInt(req.body.sides);
     let dice = parseInt(req.body.dice);
